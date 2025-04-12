@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Abdessamad Abdaoui - Portfolio",
   description: "Portfolio professionnel d'Abdessamad Abdaoui, étudiant en développement web et bases de données",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
