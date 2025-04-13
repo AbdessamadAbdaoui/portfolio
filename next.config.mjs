@@ -11,8 +11,15 @@ try {
   }
 }
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // ✅ Obligatoire pour GitHub Pages
+
+  assetPrefix: isProd ? '/portfolio/' : '', // 👈 doit correspondre au nom du repo
+
+  trailingSlash: true, // ✅ important pour GitHub Pages
   eslint: {
     ignoreDuringBuilds: true,
   },
